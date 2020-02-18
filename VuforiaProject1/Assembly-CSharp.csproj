@@ -24,7 +24,7 @@
     <DebugType>full</DebugType>
     <Optimize>false</Optimize>
     <OutputPath>Temp\bin\Debug\</OutputPath>
-    <DefineConstants>DEBUG;TRACE;UNITY_2019_2_0;UNITY_2019_2;UNITY_2019;UNITY_5_3_OR_NEWER;UNITY_5_4_OR_NEWER;UNITY_5_5_OR_NEWER;UNITY_5_6_OR_NEWER;UNITY_2017_1_OR_NEWER;UNITY_2017_2_OR_NEWER;UNITY_2017_3_OR_NEWER;UNITY_2017_4_OR_NEWER;UNITY_2018_1_OR_NEWER;UNITY_2018_2_OR_NEWER;UNITY_2018_3_OR_NEWER;UNITY_2019_1_OR_NEWER;UNITY_2019_2_OR_NEWER;UNITY_INCLUDE_TESTS;ENABLE_AUDIO;ENABLE_CACHING;ENABLE_CLOTH;ENABLE_MICROPHONE;ENABLE_MULTIPLE_DISPLAYS;ENABLE_PHYSICS;ENABLE_TEXTURE_STREAMING;ENABLE_UNET;ENABLE_LZMA;ENABLE_UNITYEVENTS;ENABLE_WEBCAM;ENABLE_WWW;ENABLE_CLOUD_SERVICES_COLLAB;ENABLE_CLOUD_SERVICES_COLLAB_SOFTLOCKS;ENABLE_CLOUD_SERVICES_ADS;ENABLE_CLOUD_SERVICES_USE_WEBREQUEST;ENABLE_CLOUD_SERVICES_UNET;ENABLE_CLOUD_SERVICES_BUILD;ENABLE_CLOUD_LICENSE;ENABLE_EDITOR_HUB_LICENSE;ENABLE_WEBSOCKET_CLIENT;ENABLE_DIRECTOR_AUDIO;ENABLE_DIRECTOR_TEXTURE;ENABLE_MANAGED_JOBS;ENABLE_MANAGED_TRANSFORM_JOBS;ENABLE_MANAGED_ANIMATION_JOBS;ENABLE_MANAGED_AUDIO_JOBS;INCLUDE_DYNAMIC_GI;ENABLE_MONO_BDWGC;ENABLE_SCRIPTING_GC_WBARRIERS;PLATFORM_SUPPORTS_MONO;RENDER_SOFTWARE_CURSOR;ENABLE_VIDEO;PLATFORM_STANDALONE_WIN;PLATFORM_STANDALONE;UNITY_STANDALONE_WIN;UNITY_STANDALONE;ENABLE_RUNTIME_GI;ENABLE_MOVIES;ENABLE_NETWORK;ENABLE_CRUNCH_TEXTURE_COMPRESSION;ENABLE_UNITYWEBREQUEST;ENABLE_CLOUD_SERVICES;ENABLE_CLOUD_SERVICES_ANALYTICS;ENABLE_CLOUD_SERVICES_PURCHASING;ENABLE_CLOUD_SERVICES_CRASH_REPORTING;ENABLE_OUT_OF_PROCESS_CRASH_HANDLER;ENABLE_EVENT_QUEUE;ENABLE_CLUSTER_SYNC;ENABLE_CLUSTERINPUT;ENABLE_VR;ENABLE_AR;ENABLE_WEBSOCKET_HOST;ENABLE_MONO;NET_STANDARD_2_0;ENABLE_PROFILER;UNITY_ASSERTIONS;UNITY_EDITOR;UNITY_EDITOR_64;UNITY_EDITOR_WIN;ENABLE_UNITY_COLLECTIONS_CHECKS;ENABLE_BURST_AOT;UNITY_TEAM_LICENSE;ENABLE_CUSTOM_RENDER_TEXTURE;ENABLE_DIRECTOR;ENABLE_LOCALIZATION;ENABLE_SPRITES;ENABLE_TERRAIN;ENABLE_TILEMAP;ENABLE_TIMELINE;CSHARP_7_OR_LATER;CSHARP_7_3_OR_NEWER</DefineConstants>
+    <DefineConstants>DEBUG;TRACE;UNITY_2019_2_0;UNITY_2019_2;UNITY_2019;UNITY_5_3_OR_NEWER;UNITY_5_4_OR_NEWER;UNITY_5_5_OR_NEWER;UNITY_5_6_OR_NEWER;UNITY_2017_1_OR_NEWER;UNITY_2017_2_OR_NEWER;UNITY_2017_3_OR_NEWER;UNITY_2017_4_OR_NEWER;UNITY_2018_1_OR_NEWER;UNITY_2018_2_OR_NEWER;UNITY_2018_3_OR_NEWER;UNITY_2019_1_OR_NEWER;UNITY_2019_2_OR_NEWER;UNITY_INCLUDE_TESTS;ENABLE_AUDIO;ENABLE_CACHING;ENABLE_CLOTH;ENABLE_MICROPHONE;ENABLE_MULTIPLE_DISPLAYS;ENABLE_PHYSICS;ENABLE_TEXTURE_STREAMING;ENABLE_UNET;ENABLE_LZMA;ENABLE_UNITYEVENTS;ENABLE_WEBCAM;ENABLE_WWW;ENABLE_CLOUD_SERVICES_COLLAB;ENABLE_CLOUD_SERVICES_COLLAB_SOFTLOCKS;ENABLE_CLOUD_SERVICES_ADS;ENABLE_CLOUD_SERVICES_USE_WEBREQUEST;ENABLE_CLOUD_SERVICES_UNET;ENABLE_CLOUD_SERVICES_BUILD;ENABLE_CLOUD_LICENSE;ENABLE_EDITOR_HUB_LICENSE;ENABLE_WEBSOCKET_CLIENT;ENABLE_DIRECTOR_AUDIO;ENABLE_DIRECTOR_TEXTURE;ENABLE_MANAGED_JOBS;ENABLE_MANAGED_TRANSFORM_JOBS;ENABLE_MANAGED_ANIMATION_JOBS;ENABLE_MANAGED_AUDIO_JOBS;INCLUDE_DYNAMIC_GI;ENABLE_MONO_BDWGC;ENABLE_SCRIPTING_GC_WBARRIERS;PLATFORM_SUPPORTS_MONO;RENDER_SOFTWARE_CURSOR;ENABLE_VIDEO;PLATFORM_STANDALONE_WIN;PLATFORM_STANDALONE;UNITY_STANDALONE_WIN;UNITY_STANDALONE;ENABLE_RUNTIME_GI;ENABLE_MOVIES;ENABLE_NETWORK;ENABLE_CRUNCH_TEXTURE_COMPRESSION;ENABLE_UNITYWEBREQUEST;ENABLE_CLOUD_SERVICES;ENABLE_CLOUD_SERVICES_ANALYTICS;ENABLE_CLOUD_SERVICES_PURCHASING;ENABLE_CLOUD_SERVICES_CRASH_REPORTING;ENABLE_OUT_OF_PROCESS_CRASH_HANDLER;ENABLE_EVENT_QUEUE;ENABLE_CLUSTER_SYNC;ENABLE_CLUSTERINPUT;ENABLE_VR;ENABLE_AR;ENABLE_WEBSOCKET_HOST;ENABLE_MONO;NET_STANDARD_2_0;ENABLE_PROFILER;UNITY_ASSERTIONS;UNITY_EDITOR;UNITY_EDITOR_64;UNITY_EDITOR_WIN;ENABLE_UNITY_COLLECTIONS_CHECKS;ENABLE_BURST_AOT;UNITY_TEAM_LICENSE;ENABLE_CUSTOM_RENDER_TEXTURE;ENABLE_DIRECTOR;ENABLE_LOCALIZATION;ENABLE_SPRITES;ENABLE_TERRAIN;ENABLE_TILEMAP;ENABLE_TIMELINE;UNITY_POST_PROCESSING_STACK_V2;CSHARP_7_OR_LATER;CSHARP_7_3_OR_NEWER</DefineConstants>
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
     <NoWarn>0169</NoWarn>
@@ -55,9 +55,71 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+     <Compile Include="Assets\Scripts\Centerpiece.cs" />
      <Compile Include="Assets\Scripts\Flocker.cs" />
-     <Compile Include="Assets\Scripts\Manager.cs" />
      <Compile Include="Assets\Scripts\Vehicle.cs" />
+     <None Include="Assets\Prefabs\GDR_FightingGameCharacters\PostProcessing\Shaders\Builtins\FinalPass.shader" />
+     <None Include="Assets\Prefabs\GDR_FightingGameCharacters\PostProcessing\Shaders\Debug\Waveform.compute" />
+     <None Include="Assets\Prefabs\GDR_FightingGameCharacters\PostProcessing\Shaders\Builtins\Uber.shader" />
+     <None Include="Assets\Prefabs\GDR_FightingGameCharacters\PostProcessing\Shaders\Builtins\Texture3DLerp.compute" />
+     <None Include="Assets\Prefabs\GDR_FightingGameCharacters\PostProcessing\Shaders\Builtins\CopyStd.shader" />
+     <None Include="Assets\Prefabs\GDR_FightingGameCharacters\PostProcessing\Shaders\Builtins\Bloom.shader" />
+     <None Include="Assets\Prefabs\GDR_FightingGameCharacters\PostProcessing\Shaders\Builtins\CopyStdFromDoubleWide.shader" />
+     <None Include="Assets\Prefabs\GDR_FightingGameCharacters\PostProcessing\Shaders\xRLib.hlsl" />
+     <None Include="Assets\Prefabs\GDR_FightingGameCharacters\PostProcessing\Shaders\API\Switch.hlsl" />
+     <None Include="Assets\Prefabs\GDR_FightingGameCharacters\PostProcessing\Shaders\Builtins\MultiScaleVOUpsample.compute" />
+     <None Include="Assets\Prefabs\GDR_FightingGameCharacters\PostProcessing\Shaders\API\PSSL.hlsl" />
+     <None Include="Assets\Prefabs\GDR_FightingGameCharacters\PostProcessing\Shaders\Debug\Vectorscope.shader" />
+     <None Include="Assets\Prefabs\GDR_FightingGameCharacters\PostProcessing\Shaders\Builtins\GaussianDownsample.compute" />
+     <None Include="Assets\Prefabs\GDR_FightingGameCharacters\PostProcessing\Shaders\Builtins\ScreenSpaceReflections.hlsl" />
+     <None Include="Assets\Prefabs\GDR_FightingGameCharacters\PostProcessing\Shaders\Builtins\DepthOfField.shader" />
+     <None Include="Assets\Prefabs\GDR_FightingGameCharacters\PostProcessing\Shaders\Builtins\DiscardAlpha.shader" />
+     <None Include="Assets\Prefabs\GDR_FightingGameCharacters\PostProcessing\Shaders\Builtins\Lut3DBaker.compute" />
+     <None Include="Assets\Prefabs\GDR_FightingGameCharacters\PostProcessing\Shaders\Builtins\Dithering.hlsl" />
+     <None Include="Assets\Prefabs\GDR_FightingGameCharacters\PostProcessing\Shaders\Colors.hlsl" />
+     <None Include="Assets\Prefabs\GDR_FightingGameCharacters\PostProcessing\Shaders\API\Vulkan.hlsl" />
+     <None Include="Assets\Prefabs\GDR_FightingGameCharacters\PostProcessing\Shaders\Builtins\GrainBaker.shader" />
+     <None Include="Assets\Prefabs\GDR_FightingGameCharacters\PostProcessing\Shaders\Builtins\ExposureHistogram.hlsl" />
+     <None Include="Assets\Prefabs\GDR_FightingGameCharacters\PostProcessing\Shaders\Debug\LightMeter.shader" />
+     <None Include="Assets\Prefabs\GDR_FightingGameCharacters\PostProcessing\Shaders\API\D3D12.hlsl" />
+     <None Include="Assets\Prefabs\GDR_FightingGameCharacters\PostProcessing\Shaders\API\OpenGL.hlsl" />
+     <None Include="Assets\Prefabs\GDR_FightingGameCharacters\PostProcessing\Shaders\Builtins\DiskKernels.hlsl" />
+     <None Include="Assets\Prefabs\GDR_FightingGameCharacters\PostProcessing\Shaders\Builtins\MultiScaleVODownsample2.compute" />
+     <None Include="Assets\Prefabs\GDR_FightingGameCharacters\PostProcessing\Shaders\Builtins\ScalableAO.hlsl" />
+     <None Include="Assets\Prefabs\GDR_FightingGameCharacters\PostProcessing\Shaders\ACES.hlsl" />
+     <None Include="Assets\Prefabs\GDR_FightingGameCharacters\PostProcessing\Shaders\Builtins\MultiScaleVODownsample1.compute" />
+     <None Include="Assets\Prefabs\GDR_FightingGameCharacters\PostProcessing\Shaders\StdLib.hlsl" />
+     <None Include="Assets\Prefabs\GDR_FightingGameCharacters\PostProcessing\Shaders\Builtins\MultiScaleVO.shader" />
+     <None Include="Assets\Prefabs\GDR_FightingGameCharacters\PostProcessing\Shaders\Builtins\DepthOfField.hlsl" />
+     <None Include="Assets\Prefabs\GDR_FightingGameCharacters\PostProcessing\Shaders\Builtins\FastApproximateAntialiasing.hlsl" />
+     <None Include="Assets\Prefabs\GDR_FightingGameCharacters\PostProcessing\Shaders\Builtins\Fog.hlsl" />
+     <None Include="Assets\Prefabs\GDR_FightingGameCharacters\PostProcessing\Shaders\Builtins\MultiScaleVORender.compute" />
+     <None Include="Assets\Prefabs\GDR_FightingGameCharacters\PostProcessing\Shaders\Builtins\ScalableAO.shader" />
+     <None Include="Assets\Prefabs\GDR_FightingGameCharacters\PostProcessing\Shaders\Builtins\SubpixelMorphologicalAntialiasing.hlsl" />
+     <None Include="Assets\Prefabs\GDR_FightingGameCharacters\PostProcessing\Shaders\Builtins\MotionBlur.shader" />
+     <None Include="Assets\Prefabs\GDR_FightingGameCharacters\PostProcessing\Shaders\Builtins\SubpixelMorphologicalAntialiasing.shader" />
+     <None Include="Assets\Prefabs\GDR_FightingGameCharacters\PostProcessing\Shaders\Builtins\Texture2DLerp.shader" />
+     <None Include="Assets\Prefabs\GDR_FightingGameCharacters\PostProcessing\Shaders\Builtins\DeferredFog.shader" />
+     <None Include="Assets\Prefabs\GDR_FightingGameCharacters\PostProcessing\Shaders\Builtins\CopyStdFromTexArray.shader" />
+     <None Include="Assets\Prefabs\GDR_FightingGameCharacters\PostProcessing\Shaders\API\D3D9.hlsl" />
+     <None Include="Assets\Prefabs\GDR_FightingGameCharacters\PostProcessing\Shaders\Builtins\Lut2DBaker.shader" />
+     <None Include="Assets\Prefabs\GDR_FightingGameCharacters\PostProcessing\Shaders\Builtins\AutoExposure.compute" />
+     <None Include="Assets\Prefabs\GDR_FightingGameCharacters\PostProcessing\Shaders\Debug\Overlays.shader" />
+     <None Include="Assets\Prefabs\GDR_FightingGameCharacters\PostProcessing\Shaders\API\Metal.hlsl" />
+     <None Include="Assets\Prefabs\GDR_FightingGameCharacters\PostProcessing\Shaders\Builtins\Distortion.hlsl" />
+     <None Include="Assets\Prefabs\GDR_FightingGameCharacters\PostProcessing\Shaders\Debug\Vectorscope.compute" />
+     <None Include="Assets\Prefabs\GDR_FightingGameCharacters\PostProcessing\Shaders\Builtins\TemporalAntialiasing.shader" />
+     <None Include="Assets\Prefabs\GDR_FightingGameCharacters\PostProcessing\Shaders\Builtins\SubpixelMorphologicalAntialiasingBridge.hlsl" />
+     <None Include="Assets\Prefabs\GDR_FightingGameCharacters\PostProcessing\Shaders\Builtins\ScreenSpaceReflections.shader" />
+     <None Include="Assets\Prefabs\GDR_FightingGameCharacters\PostProcessing\Shaders\Builtins\Copy.shader" />
+     <None Include="Assets\Prefabs\GDR_FightingGameCharacters\PostProcessing\Shaders\API\D3D11.hlsl" />
+     <None Include="Assets\Prefabs\GDR_FightingGameCharacters\PostProcessing\Shaders\Debug\Waveform.shader" />
+     <None Include="Assets\Prefabs\GDR_FightingGameCharacters\PostProcessing\Shaders\API\XboxOne.hlsl" />
+     <None Include="Assets\Prefabs\GDR_FightingGameCharacters\PostProcessing\Shaders\Sampling.hlsl" />
+     <None Include="Assets\Prefabs\GDR_FightingGameCharacters\PostProcessing\Shaders\API\PSP2.hlsl" />
+     <None Include="Assets\Prefabs\GDR_FightingGameCharacters\PostProcessing\Shaders\Debug\Histogram.compute" />
+     <None Include="Assets\Prefabs\GDR_FightingGameCharacters\PostProcessing\Shaders\Debug\Histogram.shader" />
+     <None Include="Assets\Prefabs\GDR_FightingGameCharacters\PostProcessing\Shaders\Builtins\ExposureHistogram.compute" />
  <Reference Include="Unity.Timeline.Editor">
  <HintPath>C:/Users/Nick/Documents/VuforiaProject1/VuforiaProject1/Library/ScriptAssemblies/Unity.Timeline.Editor.dll</HintPath>
  </Reference>
@@ -84,6 +146,12 @@
  </Reference>
  <Reference Include="UnityEditor.UI">
  <HintPath>C:/Users/Nick/Documents/VuforiaProject1/VuforiaProject1/Library/ScriptAssemblies/UnityEditor.UI.dll</HintPath>
+ </Reference>
+ <Reference Include="VuforiaScripts">
+ <HintPath>C:/Users/Nick/Documents/VuforiaProject1/VuforiaProject1/Library/ScriptAssemblies/VuforiaScripts.dll</HintPath>
+ </Reference>
+ <Reference Include="VuforiaEditorScripts">
+ <HintPath>C:/Users/Nick/Documents/VuforiaProject1/VuforiaProject1/Library/ScriptAssemblies/VuforiaEditorScripts.dll</HintPath>
  </Reference>
  <Reference Include="UnityEngine.AIModule">
  <HintPath>C:/Program Files/Unity/Hub/Editor/2019.2.0f1/Editor/Data/Managed/UnityEngine/UnityEngine.AIModule.dll</HintPath>
@@ -261,6 +329,9 @@
  </Reference>
  <Reference Include="UnityEngine.XRModule">
  <HintPath>C:/Program Files/Unity/Hub/Editor/2019.2.0f1/Editor/Data/Managed/UnityEngine/UnityEngine.XRModule.dll</HintPath>
+ </Reference>
+ <Reference Include="Vuforia.UnityExtensions">
+ <HintPath>C:/Users/Nick/Documents/VuforiaProject1/VuforiaProject1/Library/PackageCache/com.ptc.vuforia.engine@8.5.9/Vuforia/Plugins/Managed/Runtime/Vuforia.UnityExtensions.dll</HintPath>
  </Reference>
  <Reference Include="netstandard">
  <HintPath>C:/Program Files/Unity/Hub/Editor/2019.2.0f1/Editor/Data/NetStandard/ref/2.0.0/netstandard.dll</HintPath>
@@ -607,6 +678,16 @@
  <Reference Include="System.Xml.Serialization">
  <HintPath>C:/Program Files/Unity/Hub/Editor/2019.2.0f1/Editor/Data/NetStandard/compat/2.0.0/shims/netfx/System.Xml.Serialization.dll</HintPath>
  </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="Unity.Postprocessing.Editor.csproj">
+      <Project>{691472B7-8552-BC8D-2C70-E887851F89D9}</Project>
+      <Name>Unity.Postprocessing.Editor</Name>
+    </ProjectReference>
+    <ProjectReference Include="Unity.Postprocessing.Runtime.csproj">
+      <Project>{99942264-3B15-A53B-52A0-9860F98D8D7F}</Project>
+      <Name>Unity.Postprocessing.Runtime</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
