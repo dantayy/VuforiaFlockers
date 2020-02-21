@@ -200,7 +200,7 @@ PrefabInstance:
     - target: {fileID: 9500000, guid: 9a7360c73cc871546bf5dda47450215b, type: 3}
       propertyPath: m_Controller
       value: 
-      objectReference: {fileID: 9100000, guid: b43b3227f7701fd45b398bc10142289f, type: 2}
+      objectReference: {fileID: 9100000, guid: 070fa63b0fb7ffb40a9054e442c7c5ec, type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 9a7360c73cc871546bf5dda47450215b, type: 3}
 --- !u!4 &532076055 stripped
@@ -227,7 +227,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e6970488e820fce44b5c42c2452a47fb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  flocker: {fileID: 1531368644988209834, guid: acf7964430318684eafd0d6c4902ef92, type: 3}
+  initialFlocker: {fileID: 8625876947759780698, guid: f48a823e3b9e6894c8b5d85ae292aa9f,
+    type: 3}
   numFlockers: 10
 --- !u!1 &585298444
 GameObject:

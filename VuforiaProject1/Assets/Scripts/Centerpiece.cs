@@ -6,10 +6,21 @@ using UnityEngine;
 public class Centerpiece : MonoBehaviour
 {
     //attributes
-    public GameObject flocker;
+    public GameObject initialFlocker;
     public int numFlockers;
 
     void OnEnable()
+    {
+        SpawnFlockers(initialFlocker);
+    }
+
+    void OnDisable()
+    {
+        DespawnFlockers();
+    }
+
+    // helper function for spawning flockers
+    void SpawnFlockers(GameObject flocker)
     {
         // spawn in the flockers
         for (int i = 0; i < numFlockers; i++)
@@ -18,7 +29,8 @@ public class Centerpiece : MonoBehaviour
         }
     }
 
-    void OnDisable()
+    // helper function for despawning flockers
+    void DespawnFlockers()
     {
         // despawn flockers
         foreach (GameObject flocker in GameObject.FindGameObjectsWithTag("Flocker"))
@@ -26,4 +38,12 @@ public class Centerpiece : MonoBehaviour
             Destroy(flocker);
         }
     }
+
+    // helper function for changing flockers out
+    public void ChangeFlockers(GameObject newFlocker)
+    {
+        DespawnFlockers();
+        SpawnFlockers(newFlocker);
+    }
+
 }

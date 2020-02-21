@@ -14,8 +14,8 @@ GameObject:
   - component: {fileID: 418642571346038699}
   - component: {fileID: -9145149623254193472}
   m_Layer: 0
-  m_Name: NewFlocker
-  m_TagString: Untagged
+  m_Name: Flocker
+  m_TagString: Flocker
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
