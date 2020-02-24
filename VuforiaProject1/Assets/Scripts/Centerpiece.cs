@@ -12,6 +12,7 @@ public class Centerpiece : MonoBehaviour
     void OnEnable()
     {
         SpawnFlockers(initialFlocker);
+        gameObject.GetComponent<BoxCollider>().enabled = true;
     }
 
     void OnDisable()
